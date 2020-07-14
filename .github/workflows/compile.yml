@@ -23,5 +23,11 @@ jobs:
 
       - name: compile assets
         run: |
-          apt install -y make pandoc wkhtmltopdf
+          sudo apt install -y make pandoc wkhtmltopdf
           make all
+
+      - name: upload artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: dist
+          path: dist
