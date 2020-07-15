@@ -19,7 +19,10 @@ html: setup
 
 
 pdf: html
-	xvfb-run wkhtmltopdf -L 0 -R 0 dist/index.html dist/resume.pdf
+	xvfb-run wkhtmltopdf \
+		--print-media-type \
+		-L 0 -R 0 \
+		dist/index.html dist/resume.pdf
 
 watch:
 	make all
