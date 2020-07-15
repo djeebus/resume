@@ -22,9 +22,13 @@ jobs:
         uses: actions/checkout@v2
 
       - name: compile assets
+        env:
+          WKHTML_VERSION: 0.12.6-1
         run: |
           sudo apt update
-          sudo apt install -y make pandoc wkhtmltopdf xvfb
+          sudo apt install -y fontconfig make pandoc xfonts-75dpi xfonts-base xvfb
+          sudo wget https://github.com/wkhtmltopdf/packaging/releases/download/${WKHTML_VERSION}/wkhtmltox_${WKHTML_VERSION}.bionic_amd64.deb
+          sudo dpkg -i wkhtmltox${WKHTML_VERSION}.bionic_amd64.deb
           make all
 
       - name: upload artifacts
