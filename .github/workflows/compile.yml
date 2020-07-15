@@ -23,6 +23,7 @@ jobs:
 
       - name: compile assets
         run: |
+          sudo apt update
           sudo apt install -y make pandoc wkhtmltopdf xvfb
           make all
 
