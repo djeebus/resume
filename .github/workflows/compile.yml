@@ -22,10 +22,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: compile assets
-        env:
-          DISPLAY: unix0
         run: |
-          sudo apt install -y make pandoc wkhtmltopdf
+          sudo apt install -y make pandoc wkhtmltopdf xvfb
           make all
 
       - name: upload artifacts
