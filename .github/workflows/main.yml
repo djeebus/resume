@@ -24,7 +24,8 @@ jobs:
 
       - name: compile assets
         run: |
-          apt install -y make pandoc wkhtmltopdf
+          sudo apt update
+          sudo apt install -y make pandoc wkhtmltopdf xvfb
           make all
 
       - name: Deploy assets to release
