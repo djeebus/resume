@@ -8,13 +8,13 @@ setup:
 
 docx: setup
 	pandoc  --output dist/resume.docx $(MARKDOWN) \
-		--reference-doc template.docx
+		--reference-doc .templates/template.docx
 
 html: setup
 	pandoc --output dist/index.html $(MARKDOWN) \
-		--css template.css \
+		--css .templates/template.css \
 		--self-contained \
-		--template template.html \
+		--template .templates/template.html \
 		--metadata pagetitle="Joe Lombrozo's Resume"
 
 
