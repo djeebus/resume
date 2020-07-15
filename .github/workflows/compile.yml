@@ -28,7 +28,7 @@ jobs:
           sudo apt update
           sudo apt install -y fontconfig make pandoc xfonts-75dpi xfonts-base xvfb
           sudo wget https://github.com/wkhtmltopdf/packaging/releases/download/${WKHTML_VERSION}/wkhtmltox_${WKHTML_VERSION}.bionic_amd64.deb
-          sudo dpkg -i wkhtmltox${WKHTML_VERSION}.bionic_amd64.deb
+          sudo dpkg -i wkhtmltox_${WKHTML_VERSION}.bionic_amd64.deb
           make all
 
       - name: upload artifacts
