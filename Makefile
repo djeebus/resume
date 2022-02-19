@@ -1,5 +1,5 @@
 MARKDOWN=resume.md
-HTML_TEMPLATE=template.html
+HTML_TEMPLATE=.templates/template.html
 
 all: docx html pdf
 
@@ -14,7 +14,7 @@ html: setup
 	pandoc --output dist/index.html $(MARKDOWN) \
 		--css .templates/template.css \
 		--self-contained \
-		--template .templates/template.html \
+		--template $(HTML_TEMPLATE) \
 		--metadata pagetitle="Joe Lombrozo's Resume"
 
 
