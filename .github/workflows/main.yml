@@ -27,9 +27,7 @@ jobs:
           WKHTML_VERSION: 0.12.6-1
         run: |
           sudo apt update
-          sudo apt install -y fontconfig libxrender1 libjpeg-turbo8 make pandoc xfonts-75dpi xfonts-base xvfb
-          sudo wget https://github.com/wkhtmltopdf/packaging/releases/download/${WKHTML_VERSION}/wkhtmltox_${WKHTML_VERSION}.bionic_amd64.deb
-          sudo dpkg -i wkhtmltox_${WKHTML_VERSION}.bionic_amd64.deb
+          sudo make install
           make all
 
       - name: Deploy assets to release
