@@ -12,7 +12,7 @@ install-wkhtmltox: install-deps
 	dpkg -i ${DEB_PATH}
 
 install-deps:
-	apt install fontconfig libxrender1 libjpeg-turbo8 make pandoc xfonts-75dpi xfonts-base xvfb
+	apt install -y fontconfig libxrender1 libjpeg-turbo8 make pandoc xfonts-75dpi xfonts-base xvfb
 
 setup:
 	mkdir -p dist	
