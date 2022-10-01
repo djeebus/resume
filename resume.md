@@ -9,7 +9,17 @@ Senior Software engineer, proficient at Golang, Python, C#, JavaScript/TypeScrip
 Experience
 ---------
 
-### **Backend Tech Lead, Hatch** (2020-present; remote) [1y, 8m]
+### **Senior SRE Engineer, Zapier** (2021-present; remote) [4m]
+
+Internet glue.
+
+- Made sure the site kept running.
+- Set standards when performing AWS network migrations.
+- Defined helm chart standards, provided guide rails to development teams.
+
+**Keywords:** [ArgoCD](https://argoproj.github.io/cd/), AWS, EC2, Kubernetes
+
+### **Backend Tech Lead, Hatch** (2020-2022; remote) [1y, 8m]
 
 Sales pipeline automation, focused on instant responses to inbound communications.
 

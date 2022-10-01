@@ -1,21 +1,13 @@
 MARKDOWN=resume.md
 HTML_TEMPLATE=.templates/template.html
-WKHTML_VERSION=0.12.6-1
 
 all: docx html pdf
 
-install: install-deps install-wkhtmltox
-
-DEB_PATH=/tmp/wkhtmltox_${WKHTML_VERSION}.bionic_amd64.deb
-install-wkhtmltox: install-deps
-	wget https://github.com/wkhtmltopdf/packaging/releases/download/${WKHTML_VERSION}/wkhtmltox_${WKHTML_VERSION}.bionic_amd64.deb -O ${DEB_PATH}
-	dpkg -i ${DEB_PATH}
-
-install-deps:
-	apt install -y fontconfig libxrender1 libjpeg-turbo8 make pandoc xfonts-75dpi xfonts-base xvfb
+install:
+	apt install -y wkhtmltopdf xvfb
 
 setup:
-	mkdir -p dist	
+	mkdir -p dist
 
 docx: setup
 	pandoc \
