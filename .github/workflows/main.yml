@@ -22,6 +22,7 @@ jobs:
           WKHTML_VERSION: 0.12.6-1
         run: |
           apt update
+          apt install make
           make install
           make all
 
