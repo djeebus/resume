@@ -21,8 +21,8 @@ jobs:
         env:
           WKHTML_VERSION: 0.12.6-1
         run: |
-          sudo apt update
-          sudo make install
+          apt update
+          make install
           make all
 
       - name: Deploy assets to release
