@@ -4,7 +4,7 @@ HTML_TEMPLATE=.templates/template.html
 all: docx html pdf
 
 install:
-	apt install -y wkhtmltopdf xvfb
+	apt install -y pandoc wkhtmltopdf xvfb
 
 setup:
 	mkdir -p dist
