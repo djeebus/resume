@@ -18,7 +18,7 @@ Internet glue.
 - Defined helm chart standards, provided guide rails to development teams.
 - Created and contributed to some in-house open source projects, including [kubechecks](https://github.com/zapier/kubechecks) and [prom-aggregation-gateway](https://github.com/zapier/prom-aggregation-gateway).
 
-**Keywords:** [ArgoCD](https://argoproj.github.io/cd/), AWS, EC2, Kubernetes, Golang, python, Helm, Terraform, Prometheus, [VictoriaMetrics](https://victoriametrics.com/), [GitLab Runner Operator](https://operatorhub.io/operator/gitlab-runner-operator), [HashiCorp Vault](https://www.vaultproject.io/), Kafka, Redis, SQS, CloudAMQP, Cloudfront, Lambda, Fargate, EKS
+**Keywords:** [ArgoCD](https://argoproj.github.io/cd/), AWS, EC2, Kubernetes, Golang, python, bash, Helm, Terraform, Prometheus, [VictoriaMetrics](https://victoriametrics.com/), [GitLab Runner Operator](https://operatorhub.io/operator/gitlab-runner-operator), [HashiCorp Vault](https://www.vaultproject.io/), Kafka, Redis, SQS, CloudAMQP, Cloudfront, Lambda, Fargate, EKS, GitHub, GitLab
 
 ### **Backend Tech Lead, Hatch** (2020-2022; remote) [1y, 8m]
 
@@ -30,7 +30,7 @@ Sales pipeline automation, focused on instant responses to inbound communication
 - Started building out a corpus of tests (unit and functional)
 - Created a CI/CD pipeline
 
-**Keywords:** ArgoCD, AWS, [BoltDB](https://github.com/boltdb/bolt), Digital Ocean, EC2, Golang, python, [echo](https://echo.labstack.com/), Helm, Kubernetes, Mongo, RabbitMQ, Twilio, Sendgrid
+**Keywords:** ArgoCD, AWS, [BoltDB](https://github.com/boltdb/bolt), Digital Ocean, EC2, Golang, python, bash, [echo](https://echo.labstack.com/), Mongo, RabbitMQ, Twilio, Sendgrid, GitHub
 
 ### **Cofounder, EventRay** (2016-2023; remote) [5y, 9m]
 
@@ -44,7 +44,7 @@ Event registration SaaS with a goal of being the most powerful, flexible platfor
 - Integration points include API, webhook at the page or form level, SAML, or spreadsheet upload
 - Reports can be built using the same type of expressions as the rules. Reports are compiled down to database expressions
 
-**Keywords:** AIOHTTP, Ansible, asyncio, AWS, Celery, CloudFront, Docker, EC2, Gunicorn, JSON Schema, JSON Web Tokens, Proxmox, PyCharm, [pyramid](https://trypyramid.com/), Python 3.7, React, Redis, [ReportLab](https://www.reportlab.com/), [RethinkDB](https://rethinkdb.com/), SOAP, TeamCity, tox, TypeScript
+**Keywords:** AIOHTTP, Ansible, asyncio, AWS, Celery, CloudFront, Docker, EC2, Gunicorn, JSON Schema, JSON Web Tokens, Proxmox, PyCharm, [pyramid](https://trypyramid.com/), Python 3, bash, React, Redis, [ReportLab](https://www.reportlab.com/), [RethinkDB](https://rethinkdb.com/), SOAP, TeamCity, tox, TypeScript, GitHub
 
 ### **Team Lead, SurveyMonkey** (2013-2016; San Mateo, CA) [3y, 7m]
 
@@ -59,7 +59,7 @@ Industry leading consumer survey SaaS.
 - Built APIs that supported SurveyMonkey's 2016 election survey analytics website. It allowed the public to explore the relationships between demographics and political opinions
 - Architected and built SurveyMonkey's next analytics platform using Pandas, built on top of Cassandra
 
-**Keywords:** Ansible, ASP.NET, C#, Cassandra, Gunicorn, NumPy, Pandas, Python 3.6, TeamCity
+**Keywords:** Ansible, ASP.NET, C#, Cassandra, Gunicorn, NumPy, Pandas, Python 3, bash, TeamCity, GitHub Enterprise
 
 ### **Tech Lead, Kabbage** (2011-2013; Atlanta, GA) [1y, 10m]
 
@@ -72,7 +72,7 @@ Provides working capital to small business in a scalable way by automating the p
 - Built the transaction processor that helped store and analyze millions of transactions
 - Created a fully automated testing and deployment pipeline using TeamCity
 
-**Keywords:** C#, ASP.NET MVC, Entity Framework, MSBuild, MSDeploy, Microsoft SQL Server, TeamCity
+**Keywords:** C#, ASP.NET MVC, Entity Framework, MSBuild, MSDeploy, Microsoft SQL Server, TeamCity, TFS
 
 ### **Senior Engineer, SolTech** (June-September, 2011; Atlanta, GA) [4m]
 
@@ -105,7 +105,7 @@ Side Projects
 
 Self-host a variety of services for fun and profit! Including, but not limited to: [bitwarden](https://bitwarden.com/), [firefly iii](https://www.firefly-iii.org/), [ghost](https://ghost.org/), [nextcloud](https://nextcloud.com/), satisfactory, [teamspeak](https://www.teamspeak.com/)
 
-**Keywords:** argocd, [ceph](https://www.ceph.com/en/), [ingress-nginx](https://kubernetes.github.io/ingress-nginx/), helm, kubernetes, letsencrypt, [metallb](https://metallb.universe.tf/), proxmox, [talos](https://www.talos.dev/), [nvidia grid](https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/documents/nvidia-p40-datasheet.pdf)
+**Keywords:** argocd, [ceph](https://www.ceph.com/en/), [ingress-nginx](https://kubernetes.github.io/ingress-nginx/), helm, kubernetes, letsencrypt, [metallb](https://metallb.universe.tf/), proxmox, [talos](https://www.talos.dev/), [nvidia grid](https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/documents/nvidia-p40-datasheet.pdf), bash, GitHub, AWS (auth, dns, backups)
 
 ### **[Mopidy/Android Auto](https://github.com/djeebus?tab=repositories&q=mopidy)** (2018-2019)
 
