@@ -1,23 +1,24 @@
 Joe Lombrozo
 ============
 
-#### Senior Software Engineer: Backend, DevOps, Frontend
-###### [ [joe@djeebus.net](mailto:joe@djeebus.net) ]  [ [714.588.2788](tel:7145882788) ]
+#### Senior Software Engineer: Backend, DevOps, SRE
+###### [ [joe@djeebus.net](mailto:joe@djeebus.net) ]  [ [+1 714.588.2788](tel:+17145882788) ]
 
-Senior Software engineer, proficient at Golang, Python, C#, JavaScript/TypeScript, Java, Node.js, and Bash. Succesfully nurtured a DevOps mentality. A firm believer in automation when testing, deploying, and monitoring.
+Senior Software and Site Reliability engineer, proficient at Golang, Python, C#, JavaScript/TypeScript, Java, Node.js, linux, kubernetes, AWS, and Bash. Succesfully nurtured a DevOps mentality. A firm believer in automation when testing, deploying, and monitoring.
 
 Experience
 ---------
 
-### **Senior SRE Engineer, Zapier** (2021-present; remote) [4m]
+### **Senior SRE Engineer, Zapier** (2022-present; remote) [1y9m]
 
 Internet glue.
 
 - Made sure the site kept running.
 - Set standards when performing AWS network migrations.
 - Defined helm chart standards, provided guide rails to development teams.
+- Created and contributed to some in-house open source projects, including [kubechecks](https://github.com/zapier/kubechecks) and [prom-aggregation-gateway](https://github.com/zapier/prom-aggregation-gateway).
 
-**Keywords:** [ArgoCD](https://argoproj.github.io/cd/), AWS, EC2, Kubernetes
+**Keywords:** [ArgoCD](https://argoproj.github.io/cd/), AWS, EC2, Kubernetes, Golang, python, Helm, Terraform, Prometheus, [VictoriaMetrics](https://victoriametrics.com/), [GitLab Runner Operator](https://operatorhub.io/operator/gitlab-runner-operator), [HashiCorp Vault](https://www.vaultproject.io/), Kafka, Redis, SQS, CloudAMQP, Cloudfront, Lambda, Fargate, EKS
 
 ### **Backend Tech Lead, Hatch** (2020-2022; remote) [1y, 8m]
 
@@ -29,13 +30,13 @@ Sales pipeline automation, focused on instant responses to inbound communication
 - Started building out a corpus of tests (unit and functional)
 - Created a CI/CD pipeline
 
-**Keywords:** ArgoCD, AWS, [BoltDB](https://github.com/boltdb/bolt), Digital Ocean, EC2, [echo](https://echo.labstack.com/), Golang, Helm, Kubernetes, Mongo, RabbitMQ, Twilio, Sendgrid
+**Keywords:** ArgoCD, AWS, [BoltDB](https://github.com/boltdb/bolt), Digital Ocean, EC2, Golang, python, [echo](https://echo.labstack.com/), Helm, Kubernetes, Mongo, RabbitMQ, Twilio, Sendgrid
 
-### **Cofounder, EventRay** (2016-present; remote) [5y, 9m]
+### **Cofounder, EventRay** (2016-2023; remote) [5y, 9m]
 
 Event registration SaaS with a goal of being the most powerful, flexible platform available. In 2019 we launched 69 events, registered 27k attendees, and processed $16M in transactions.
 
-- Wrote over 90k lines of backend code, 84k lines of unit, integration, and functional tests
+- Wrote over 90k lines of backend code, 84k lines of unit, integration, and functional tests.
 - Fully featured registration platform, including a logic builder, payments, refunds, fully customizable reporting, transactional emails, a public API, web hooks, ...
 - Rules can be performed against all pieces of data collected by the system (user agent, country of origin, total owed, number of guests, as well as any responses entered by the attendee)
 - Forms are completely dynamic (all pages and items on pages are user configurable). Logic can often create very complex cascades of actions. A task executor processes all of them before committing the results to a database, to ensure that no rules were violated
@@ -45,7 +46,7 @@ Event registration SaaS with a goal of being the most powerful, flexible platfor
 
 **Keywords:** AIOHTTP, Ansible, asyncio, AWS, Celery, CloudFront, Docker, EC2, Gunicorn, JSON Schema, JSON Web Tokens, Proxmox, PyCharm, [pyramid](https://trypyramid.com/), Python 3.7, React, Redis, [ReportLab](https://www.reportlab.com/), [RethinkDB](https://rethinkdb.com/), SOAP, TeamCity, tox, TypeScript
 
-### **Senior Engineer, SurveyMonkey** (2013-2016; San Mateo, CA) [3y, 7m]
+### **Team Lead, SurveyMonkey** (2013-2016; San Mateo, CA) [3y, 7m]
 
 Industry leading consumer survey SaaS.
 
@@ -60,7 +61,7 @@ Industry leading consumer survey SaaS.
 
 **Keywords:** Ansible, ASP.NET, C#, Cassandra, Gunicorn, NumPy, Pandas, Python 3.6, TeamCity
 
-### **Senior Engineer, Kabbage** (2011-2013; Atlanta, GA) [1y, 10m]
+### **Tech Lead, Kabbage** (2011-2013; Atlanta, GA) [1y, 10m]
 
 Provides working capital to small business in a scalable way by automating the process of approving and funding loans.
 
@@ -80,7 +81,7 @@ Software consultant shop.
 - Built a tool for requesting free diabetic shoes for medicare recipients
 - Mentored the engineers around me on a variety of topics, including JavaScript, PHP, C#, and Microsoft SQL Server
 
-### **Senior Engineer, Orchid Events** (2007-2011; Salt Lake City, UT) [4y, 6m]
+### **Tech Lead, Orchid Events** (2007-2011; Salt Lake City, UT) [4y, 6m]
 
 Full service online event registration provider.
 
@@ -88,7 +89,7 @@ Full service online event registration provider.
 - Created new framework for building registration sites, reducing the time to deploy a new site from two weeks to two hours
 - Created self service application to let customers manage parts of registration
 
-### **Senior Engineer, Universal Metals** (2004-2007; Orange, CA) [2y, 6m]
+### **Tech Lead, Universal Metals** (2004-2007; Orange, CA) [2y, 6m]
 
 Metals broker and metals cut shop, mostly dealing with government and aerospace.
 
@@ -102,9 +103,9 @@ Side Projects
 
 ### **Homelab** (2003-present)
 
-Self host a variety of services for fun and profit! Including, but not limited to: [bitwarden](https://bitwarden.com/), [firefly iii](https://www.firefly-iii.org/), [ghost](https://ghost.org/), [nextcloud](https://nextcloud.com/), satisfactory, [teamspeak](https://www.teamspeak.com/)
+Self-host a variety of services for fun and profit! Including, but not limited to: [bitwarden](https://bitwarden.com/), [firefly iii](https://www.firefly-iii.org/), [ghost](https://ghost.org/), [nextcloud](https://nextcloud.com/), satisfactory, [teamspeak](https://www.teamspeak.com/)
 
-**Keywords:** argocd, [ceph](https://www.ceph.com/en/), [haproxy-ingress](https://github.com/haproxy-ingress), helm, kubernetes, letsencrypt, [metallb](https://metallb.universe.tf/), proxmox
+**Keywords:** argocd, [ceph](https://www.ceph.com/en/), [ingress-nginx](https://kubernetes.github.io/ingress-nginx/), helm, kubernetes, letsencrypt, [metallb](https://metallb.universe.tf/), proxmox, [talos](https://www.talos.dev/), [nvidia grid](https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/documents/nvidia-p40-datasheet.pdf)
 
 ### **[Mopidy/Android Auto](https://github.com/djeebus?tab=repositories&q=mopidy)** (2018-2019)
 
