@@ -1,15 +1,15 @@
 Joe Lombrozo
 ============
 
-#### Senior Software Engineer: Backend, DevOps, SRE
+#### Senior Engineer: Architect, Cloud, Backend, DevOps, Site Reliability
 ###### [ [joe@djeebus.net](mailto:joe@djeebus.net) ]  [ [+1 714.588.2788](tel:+17145882788) ]
 
-Senior Software and Site Reliability engineer, proficient at Golang, Python, C#, JavaScript/TypeScript, Java, Node.js, linux, kubernetes, AWS, and Bash. Succesfully nurtured a DevOps mentality. A firm believer in automation when testing, deploying, and monitoring.
+Senior Engineer, proficient at Golang, Python, C#, JavaScript/TypeScript, Java, Node.js, linux, kubernetes, AWS, and Bash. Succesfully nurtured a DevOps mentality. A firm believer in automation when testing, deploying, and monitoring.
 
 Experience
 ---------
 
-### **Senior SRE Engineer, Zapier** (2022-present; remote) [1y9m]
+### **Senior SRE Engineer, Zapier** (2022-present; remote) [1y, 9m]
 
 Internet glue.
 
@@ -17,8 +17,9 @@ Internet glue.
 - Set standards when performing AWS network migrations.
 - Defined helm chart standards, provided guide rails to development teams.
 - Created and contributed to some in-house open source projects, including [kubechecks](https://github.com/zapier/kubechecks) and [prom-aggregation-gateway](https://github.com/zapier/prom-aggregation-gateway).
+- Functioned as a senior consultant, supporting whatever systems the engineers utilized.
 
-**Keywords:** [ArgoCD](https://argoproj.github.io/cd/), AWS, EC2, Kubernetes, Golang, python, bash, Helm, Terraform, Prometheus, [VictoriaMetrics](https://victoriametrics.com/), [GitLab Runner Operator](https://operatorhub.io/operator/gitlab-runner-operator), [HashiCorp Vault](https://www.vaultproject.io/), Kafka, Redis, SQS, CloudAMQP, Cloudfront, Lambda, Fargate, EKS, GitHub, GitLab
+**Keywords:** [ArgoCD](https://argoproj.github.io/cd/), AWS, EC2, Kubernetes, Golang, python, bash, Helm, Terraform, Prometheus, Graylog, [VictoriaMetrics](https://victoriametrics.com/), [GitLab Runner Operator](https://operatorhub.io/operator/gitlab-runner-operator), [HashiCorp Vault](https://www.vaultproject.io/), Kafka, Redis, SQS, CloudAMQP, Cloudfront, AWS Lambda, Fargate, EKS, GitHub, GitLab
 
 ### **Backend Tech Lead, Hatch** (2020-2022; remote) [1y, 8m]
 
@@ -51,7 +52,6 @@ Event registration SaaS with a goal of being the most powerful, flexible platfor
 Industry leading consumer survey SaaS.
 
 - Hired to support C# platform while the rest of the company switched to python
-- Started working on python full time within 6 months, within months was teaching others the art of python package management
 - Built the APIs and async services that supported sending and tracking of emails
 - Designed, implemented and supported the public API
 - Designed and implemented a test/deploy pipeline based on TeamCity and Ansible. Within three months, half of the company's projects were onboarded
@@ -103,13 +103,13 @@ Side Projects
 
 ### **Homelab** (2003-present)
 
-Self-host a variety of services for fun and profit! Including, but not limited to: [bitwarden](https://bitwarden.com/), [firefly iii](https://www.firefly-iii.org/), [ghost](https://ghost.org/), [nextcloud](https://nextcloud.com/), satisfactory, [teamspeak](https://www.teamspeak.com/)
+Self-host a variety of services for fun and profit! Including, but not limited to: [bitwarden](https://bitwarden.com/), [firefly iii](https://www.firefly-iii.org/), [plex](https://plex.tv/), [nextcloud](https://nextcloud.com/), satisfactory, [teamspeak](https://www.teamspeak.com/). Currently running 8 old dell and hp rack servers totaling 232 cpu cores, 1.06 TB of ram, and 146 TB of storage.
 
 **Keywords:** argocd, [ceph](https://www.ceph.com/en/), [ingress-nginx](https://kubernetes.github.io/ingress-nginx/), helm, kubernetes, letsencrypt, [metallb](https://metallb.universe.tf/), proxmox, [talos](https://www.talos.dev/), [nvidia grid](https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/documents/nvidia-p40-datasheet.pdf), bash, GitHub, AWS (auth, dns, backups)
 
 ### **[Mopidy/Android Auto](https://github.com/djeebus?tab=repositories&q=mopidy)** (2018-2019)
 
-Built a raspberry pi audio appliance in order to play high quality audio through the car's Aux In port. Built an Android Auto media app that controls Mopidy via Bluetooth SPP. Extended Mopidy so that it can be controlled via Bluetooth SPP. Built a Mopidy plugin so that it would automatically play random songs if none had been selected.
+Built a raspberry pi audio appliance including: an Android Auto app that controls Mopidy via Bluetooth SPP, a Mopidy plugin so that it can be controlled via Bluetooth SPP, and another plugin so that it would automatically play random songs if none had been selected.
 
 **Keywords:** Android Auto, [Mopidy](https://mopidy.com/), [Bluetooth SPP](https://en.wikipedia.org/wiki/List_of_Bluetooth_profiles#Serial_Port_Profile_(SPP))
 
