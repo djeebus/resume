@@ -17,6 +17,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - uses: wistia/parse-tool-versions@v2.0.0
+
+      - uses: earthly/actions-setup@v1
+        with:
+          version: ${{ env.EARTHLY_TOOL_VERSION }}
+
       - name: compile assets
         env:
           WKHTML_VERSION: 0.12.6-1
