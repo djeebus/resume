@@ -82,7 +82,7 @@ template {
  */
 
 html {
-    font-family: sans-serif;
+    font-family: "Times New Roman", sans-serif;
     /* 1 */
     -ms-text-size-adjust: 100%;
     /* 2 */
@@ -507,13 +507,8 @@ body {
     color: black;
 }
 
-*:not('#mkdbuttons') {
-    margin: 0;
-    padding: 0
-}
-
 body {
-    font: 13.34pxHelvetica;
+    font: 13.34px Helvetica;
     -webkit-font-smoothing: subpixel-antialiased;
     line-height: 1.4;
     padding: 3px;

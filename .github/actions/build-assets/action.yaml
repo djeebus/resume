@@ -1,0 +1,14 @@
+name: Build resume
+description: Build all resume assets
+runs:
+  using: composite
+
+  steps:
+    - uses: wistia/parse-tool-versions@v2.0.0
+
+    - uses: earthly/actions-setup@v1
+      with:
+        version: ${{ env.EARTHLY_TOOL_VERSION }}
+
+    - shell: sh
+      run: earthly +all

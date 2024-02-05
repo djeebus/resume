@@ -1,0 +1,19 @@
+name: Test the build
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/build-assets
+
+      - uses: actions/upload-artifact@v4
+        with:
+          path: ./dist/*
+          if-no-files-found: error
+          retention-days: 7
+          overwrite: true
