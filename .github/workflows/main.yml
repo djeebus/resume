@@ -17,20 +17,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - uses: wistia/parse-tool-versions@v2.0.0
-
-      - uses: earthly/actions-setup@v1
-        with:
-          version: ${{ env.EARTHLY_TOOL_VERSION }}
-
-      - name: compile assets
-        env:
-          WKHTML_VERSION: 0.12.6-1
-        run: |
-          apt update
-          apt install make
-          make install
-          make all
+      - uses: ./.github/actions/build-assets
 
       - name: Deploy assets to release
         id: create_release
@@ -50,7 +37,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: dist/resume.pdf
-          asset_name: Joe Lombrozo's Resume.pdf
+          asset_name: Joe Lombrozo.pdf
           asset_content_type: application/pdf
 
       - name: Upload docx
@@ -60,5 +47,25 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: dist/resume.docx
-          asset_name: Joe Lombrozo's Resume.docx
+          asset_name: Joe Lombrozo.docx
           asset_content_type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+      - name: Upload docx
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: dist/resume.html
+          asset_name: Joe Lombrozo.html
+          asset_content_type: text/html
+
+      - name: Upload Markdown
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: dist/resume.md
+          asset_name: Joe Lombrozo.md
+          asset_content_type: text/markdown
