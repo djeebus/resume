@@ -17,12 +17,14 @@ lint:
   COPY .mdlrc /home/mdl/.mdlrc
   COPY .style.rb /home/mdl/.style.rb
   COPY resume.md resume.md
+
   RUN mdl  resume.md
 
 html:
   FROM +pandoc
 
   COPY .templates/ .templates/
+  COPY images/ images/
   COPY resume.md resume.md
 
 	RUN pandoc --output resume.html resume.md \
@@ -56,15 +58,16 @@ pdf:
     xvfb \
     fonts-ubuntu
 
-  COPY .templates/ .templates/
-  COPY +html/resume.html resume.html
-
   # install helvetica
   RUN wget https://laplace.physics.ubc.ca/Doc/rnpletal/Helvetica.ttf.gz \
     && gunzip Helvetica.ttf.gz \
     && mkdir /usr/share/fonts/truetype/myfonts \
     && mv Helvetica.ttf /usr/share/fonts/truetype/myfonts/ \
     && fc-cache -f -v /usr/share/fonts/truetype/myfonts/
+
+  COPY .templates/ .templates/
+  COPY images/ images/
+  COPY +html/resume.html resume.html
 
   RUN xvfb-run wkhtmltopdf \
     --print-media-type \
