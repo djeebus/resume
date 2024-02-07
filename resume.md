@@ -4,7 +4,7 @@
 
 #### ![Email](/images/email.svg) [joe@djeebus.net](mailto:joe@djeebus.net) | ![Phone](/images/phone.svg) [+1 714.588.2788](tel:+17145882788) | ![Github](/images/github.svg) [github.com/djeebus](https://github.com/djeebus) | ![LinkedIn](/images/linkedin.svg) [linkedin.com/in/djeebus](https://linkedin.com/in/djeebus)
 
-Senior Engineer, proficient at Golang, Python, C#, JavaScript/TypeScript, Java, Node.js, linux, kubernetes, AWS, and Bash. Succesfully nurtured a DevOps mentality. A firm believer in automation when testing, deploying, and monitoring.
+Senior Engineer, proficient at Golang, Python, C#, linux, kubernetes, AWS, and Bash. A firm believer in automation when testing, deploying, and monitoring.
 
 ## Experience
 
