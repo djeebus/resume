@@ -1,35 +1,48 @@
-Joe Lombrozo
-============
+# Joe Lombrozo
 
-#### Senior Engineer: Architect, Cloud, Backend, DevOps, Site Reliability
-###### [ [joe@djeebus.net](mailto:joe@djeebus.net) ]  [ [+1 714.588.2788](tel:+17145882788) ]
+**Senior Engineer: Architect, Cloud, Backend, DevOps, Site Reliability**
+
+*[ [joe@djeebus.net](mailto:joe@djeebus.net) ]  [ [+1 714.588.2788](tel:+17145882788) ]*
 
 Senior Engineer, proficient at Golang, Python, C#, JavaScript/TypeScript, Java, Node.js, linux, kubernetes, AWS, and Bash. Succesfully nurtured a DevOps mentality. A firm believer in automation when testing, deploying, and monitoring.
 
-Experience
----------
+## Experience
 
 ### **Senior SRE Engineer, Zapier** (2022-present; remote) [1y, 9m]
 
-Internet glue.
+No-code/Low-code automation platform.
 
-- Made sure the site kept running.
+#### Senior Site Reliability Engineer
+
 - Set standards when performing AWS network migrations.
-- Defined helm chart standards, provided guide rails to development teams.
-- Created and contributed to some in-house open source projects, including [kubechecks](https://github.com/zapier/kubechecks) and [prom-aggregation-gateway](https://github.com/zapier/prom-aggregation-gateway).
-- Functioned as a senior consultant, supporting whatever systems the engineers utilized.
+- Defined helm chart standards, provided guide rails to development teams including tutorials on jsonschema and helm unittests.
+- Functioned as a senior consultant, supporting a diverse set of technologies including EKS, SQS, Elasticache, Lambda, Fargate, Datadog, Hashicorp Vault, and more.
+- Managed and supported 19 EKS clusters with a total of ~700 nodes.
+- Applied topology hints to save ~$75k/month in transit costs.
+- Migrated services from heroku to EKS.
 
-**Keywords:** [ArgoCD](https://argoproj.github.io/cd/), AWS, EC2, Kubernetes, Golang, python, bash, Helm, Terraform, Prometheus, Graylog, [VictoriaMetrics](https://victoriametrics.com/), [GitLab Runner Operator](https://operatorhub.io/operator/gitlab-runner-operator), [HashiCorp Vault](https://www.vaultproject.io/), Kafka, Redis, SQS, CloudAMQP, Cloudfront, AWS Lambda, Fargate, EKS, GitHub, GitLab
+**Keywords:** [ArgoCD](https://argoproj.github.io/cd/), AWS, EC2, Kubernetes, python, bash, Helm, Terraform, Prometheus, Graylog, [VictoriaMetrics](https://victoriametrics.com/), [GitLab Runner Operator](https://operatorhub.io/operator/gitlab-runner-operator), [HashiCorp Vault](https://www.vaultproject.io/), Kafka, Redis, SQS, CloudAMQP, Cloudfront, AWS Lambda, Fargate, EKS, GitHub, GitLab
+
+#### Senior Developer
+
+I created and contributed to some in-house and open source projects with a focus on engaging and delighting our customers.
+
+- [kubechecks](https://github.com/kubechecks) (golang) handles diffing and schema validation for argocd applications. New features include support for application sets, mapping gitlab and github pull requests to argocd applications, validating against custom CRDs, and validating resources against OPA rego policies. This allowed engineers to deploy infrastructure changes confidently.
+- secrets sync operator (golang): use CRDs to synchronize secrets from hashicorp vault to vercel and redeploying. This allowed us to continue using best practices to manage and secure secrets while supporting vercel as a platform.
+- network visualizer (python): build mermaid graph of network paths through route 53, cloudfront distributions and origins, kubernetes ingresses, services, and pods.
+
+**Keywords:** [ArgoCD](https://argoproj.github.io/cd/), Kubernetes, Golang, Helm, Prometheus, GitHub, GitLab, Rego
 
 ### **Backend Tech Lead, Hatch** (2020-2022; remote) [1y, 8m]
 
-Sales pipeline automation, focused on instant responses to inbound communications.
+Customer communication automation, including sms/phone/voicemail/email, generated responses to inbound communications, scheduled follow-up responses, automatic customer bucketing, and a kan-ban first frontend to allow employees to collaborate intuitively. Some of the functional tests were written in python temporarily, everything else was golang.
 
-- Led rearchitecture effort to make the app stable, performant and horizontally scalable.
+- Led a team of 7 in a rearchitecture effort to make the app stable, performant and horizontally scalable. This included preventing panics, unit test coverage, migrating away from bespoke database, DI, and web framework libraries to ones supported and battle tested by the community.
 - Mentored engineering team on testing, performance tuning, logging, debugging and alerting.
-- Migrated from bolt to mongo.
-- Started building out a corpus of tests (unit and functional)
-- Created a CI/CD pipeline
+- Migrated from bolt to mongodb while maintaining baremetal-like performance.
+- Led the effort to cover the application in tests (unit and functional), linting, and CI to ensure that stability wins were sticky.
+- Created a CD pipeline, to allow anyone to deploy the application.
+- All of the above was done while the company 5x'd their revenue and 30x'd their traffic.
 
 **Keywords:** ArgoCD, AWS, [BoltDB](https://github.com/boltdb/bolt), Digital Ocean, EC2, Golang, python, bash, [echo](https://echo.labstack.com/), Mongo, RabbitMQ, Twilio, Sendgrid, GitHub
 
@@ -43,9 +56,10 @@ Event registration SaaS with a goal of being the most powerful, flexible platfor
 - Forms are completely dynamic (all pages and items on pages are user configurable). Logic can often create very complex cascades of actions. A task executor processes all of them before committing the results to a database, to ensure that no rules were violated
 - Payment services integrated with include: PayPal, Payflow Pro, Authorize.Net, and Stripe
 - Integration points include API, webhook at the page or form level, SAML, or spreadsheet upload
-- Reports can be built using the same type of expressions as the rules. Reports are compiled down to database expressions
+- Reports can be built using the same type of expressions as the rules. Reports are compiled down to database expressions.
+- Some of the reporting engine was written in golang, everything else was python.
 
-**Keywords:** AIOHTTP, Ansible, asyncio, AWS, Celery, CloudFront, Docker, EC2, Gunicorn, JSON Schema, JSON Web Tokens, Proxmox, PyCharm, [pyramid](https://trypyramid.com/), Python 3, bash, React, Redis, [ReportLab](https://www.reportlab.com/), [RethinkDB](https://rethinkdb.com/), SOAP, TeamCity, tox, TypeScript, GitHub
+**Keywords:** AIOHTTP, Ansible, asyncio, AWS, Celery, CloudFront, Docker, EC2, Gunicorn, JSON Schema, JSON Web Tokens, Proxmox, PyCharm, [pyramid](https://trypyramid.com/), Python, bash, React, Redis, [ReportLab](https://www.reportlab.com/), [RethinkDB](https://rethinkdb.com/), SOAP, TeamCity, tox, TypeScript, GitHub
 
 ### **Team Lead, SurveyMonkey** (2013-2016; San Mateo, CA) [3y, 7m]
 
@@ -98,8 +112,7 @@ Metals broker and metals cut shop, mostly dealing with government and aerospace.
 
 **Keywords:** ASP.NET, C#, C++, jQuery, OpenGL, Microsoft SQL Server
 
-Side Projects
--------------
+## Side Projects
 
 ### **Homelab** (2003-present)
 

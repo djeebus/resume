@@ -11,6 +11,14 @@ pandoc:
   RUN apt install -y \
     pandoc
 
+lint:
+  FROM markdownlint/markdownlint:0.13.0
+
+  COPY .mdlrc /home/mdl/.mdlrc
+  COPY .style.rb /home/mdl/.style.rb
+  COPY resume.md resume.md
+  RUN mdl  resume.md
+
 html:
   FROM +pandoc
 
