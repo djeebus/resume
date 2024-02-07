@@ -11,6 +11,25 @@ pandoc:
   RUN apt install -y \
     pandoc
 
+images:
+  FROM dpokidov/imagemagick:7.1.1-27
+
+  COPY images/ images/
+
+  RUN mkdir dist/
+
+  RUN magick images/email.svg -background none -resize 17x17 dist/email.png
+  SAVE ARTIFACT dist/email.png AS LOCAL ./images/email.png
+
+  RUN magick images/github.svg -background none -resize 17x17 dist/github.png
+  SAVE ARTIFACT dist/github.png AS LOCAL ./images/github.png
+
+  RUN magick images/linkedin.svg -background none -resize 17x17 dist/linkedin.png
+  SAVE ARTIFACT dist/linkedin.png AS LOCAL ./images/linkedin.png
+
+  RUN magick images/phone.svg -background none -resize 17x17 dist/phone.png
+  SAVE ARTIFACT dist/phone.png AS LOCAL ./images/phone.png
+
 lint:
   FROM markdownlint/markdownlint:0.13.0
 
@@ -39,6 +58,7 @@ docx:
   FROM +pandoc
 
   COPY .templates/template.docx template.docx
+  COPY images/ images/
   COPY resume.md resume.md
 
 	RUN pandoc \
