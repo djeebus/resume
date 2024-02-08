@@ -43,8 +43,12 @@ html:
   FROM +pandoc
 
   COPY .templates/ .templates/
-  COPY images/ images/
   COPY resume.md resume.md
+
+  COPY +images/email.png images/email.png
+  COPY +images/github.png images/github.png
+  COPY +images/linkedin.png images/linkedin.png
+  COPY +images/phone.png images/phone.png
 
 	RUN pandoc --output resume.html resume.md \
 		--css .templates/template.css \
@@ -58,8 +62,12 @@ docx:
   FROM +pandoc
 
   COPY .templates/template.docx template.docx
-  COPY images/ images/
   COPY resume.md resume.md
+
+  COPY +images/email.png images/email.png
+  COPY +images/github.png images/github.png
+  COPY +images/linkedin.png images/linkedin.png
+  COPY +images/phone.png images/phone.png
 
 	RUN pandoc \
     --output resume.docx \
@@ -86,8 +94,12 @@ pdf:
     && fc-cache -f -v /usr/share/fonts/truetype/myfonts/
 
   COPY .templates/ .templates/
-  COPY images/ images/
   COPY +html/resume.html resume.html
+
+  COPY +images/email.png images/email.png
+  COPY +images/github.png images/github.png
+  COPY +images/linkedin.png images/linkedin.png
+  COPY +images/phone.png images/phone.png
 
   RUN xvfb-run wkhtmltopdf \
     --print-media-type \
