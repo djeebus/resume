@@ -1,8 +1,8 @@
 # Joe Lombrozo
 
-#### Senior Engineer: Architect, Cloud, Backend, DevOps, Site Reliability
+##### Senior Engineer: Architect, Cloud, Backend, DevOps, Site Reliability
 
-#### ![Email](images/email.png) [joe@djeebus.net](mailto:joe@djeebus.net) | ![Phone](/images/phone.png) [+1 714.588.2788](tel:+17145882788) | ![Github](/images/github.png) [github.com/djeebus](https://github.com/djeebus) | ![LinkedIn](/images/linkedin.png) [linkedin.com/in/djeebus](https://linkedin.com/in/djeebus)
+##### ![Email](images/email.png) [joe@djeebus.net](mailto:joe@djeebus.net) | ![Phone](images/phone.png) [+1 714.588.2788](tel:+17145882788) | ![Github](images/github.png) [github.com/djeebus](https://github.com/djeebus) | ![LinkedIn](images/linkedin.png) [linkedin.com/in/djeebus](https://linkedin.com/in/djeebus)
 
 Senior Engineer, proficient at Golang, Python, C#, linux, kubernetes, AWS, and Bash. A firm believer in automation when testing, deploying, and monitoring.
 

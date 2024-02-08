@@ -76,7 +76,6 @@ docx:
 
   SAVE ARTIFACT resume.docx AS LOCAL ./dist/resume.docx
 
-
 pdf:
   FROM +ubuntu
 
