@@ -12,57 +12,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - uses: ./.github/actions/build-assets
 
-      - name: Deploy assets to release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Release
+        uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
-          draft: false
-          prerelease: false
-
-      - name: Upload pdf
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: dist/resume.pdf
-          asset_name: Joe Lombrozo.pdf
-          asset_content_type: application/pdf
-
-      - name: Upload docx
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: dist/resume.docx
-          asset_name: Joe Lombrozo.docx
-          asset_content_type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
-
-      - name: Upload docx
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: dist/resume.html
-          asset_name: Joe Lombrozo.html
-          asset_content_type: text/html
-
-      - name: Upload Markdown
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: dist/resume.md
-          asset_name: Joe Lombrozo.md
-          asset_content_type: text/markdown
+          files: ./dist/*
+          fail_on_unmatched_files: true

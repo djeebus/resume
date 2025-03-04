@@ -37,7 +37,7 @@ lint:
   COPY .style.rb /home/mdl/.style.rb
   COPY resume.md resume.md
 
-  RUN mdl  resume.md
+  RUN mdl resume.md
 
 html:
   FROM +pandoc
@@ -111,9 +111,11 @@ pdf:
 all:
   FROM +ubuntu
 
-  COPY +html/resume.html dist/resume.html
-  COPY +docx/resume.docx dist/resume.docx
-  COPY +pdf/resume.pdf dist/resume.pdf
-  COPY resume.md dist/resume.md
+  ARG filename="resume"
+
+  COPY +html/resume.html "dist/${filename}.html"
+  COPY +docx/resume.docx "dist/${filename}.docx"
+  COPY +pdf/resume.pdf "dist/${filename}.pdf"
+  COPY resume.md "dist/${filename}.md"
 
   SAVE ARTIFACT dist/ AS LOCAL ./

@@ -11,7 +11,7 @@ jobs:
 
       - uses: ./.github/actions/build-assets
 
-      - run: earthly +lint
+      - run: earthly +lint --filename="Joe Lombrozo"
 
       - uses: actions/upload-artifact@v4
         with:
