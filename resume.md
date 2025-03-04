@@ -12,9 +12,15 @@ Senior Engineer, proficient at Golang, Python, C#, linux, kubernetes, AWS, and B
 
 No-code/Low-code automation platform.
 
-#### Senior Site Reliability Engineer
+#### Developer Experience
 
-- Set standards when performing AWS network migrations.
+- Led an effort to merge our collection of infrastructure tools into a cohesive platform.
+- Assisted in integrating documentation with monitoring and search tools.
+- Provided stability and focus for team after losing three levels of management in 3 months.
+- Supported 300+ developers with service creation, local development, end-to-end testing, and deployment issues.
+
+#### Infrastructure
+
 - Defined helm chart standards, provided guide rails to development teams including tutorials on jsonschema and helm unittests.
 - Functioned as a senior consultant, supporting a diverse set of technologies including EKS, SQS, Elasticache, Lambda, Fargate, Datadog, Hashicorp Vault, and more.
 - Managed and supported 19 EKS clusters with a total of ~700 nodes.
@@ -23,7 +29,7 @@ No-code/Low-code automation platform.
 
 **Keywords:** [ArgoCD](https://argoproj.github.io/cd/), AWS, EC2, Kubernetes, python, bash, Helm, Terraform, Prometheus, Graylog, [VictoriaMetrics](https://victoriametrics.com/), [GitLab Runner Operator](https://operatorhub.io/operator/gitlab-runner-operator), [HashiCorp Vault](https://www.vaultproject.io/), Kafka, Redis, SQS, CloudAMQP, Cloudfront, AWS Lambda, Fargate, EKS, GitHub, GitLab
 
-#### Senior Developer
+#### Platform Software Engineer
 
 I created and contributed to some in-house and open source projects with a focus on engaging and delighting our customers.
 
@@ -50,7 +56,7 @@ Customer communication automation, including sms/phone/voicemail/email, generate
 
 Event registration SaaS with a goal of being the most powerful, flexible platform available. In 2019 we launched 69 events, registered 27k attendees, and processed $16M in transactions.
 
-- Wrote over 90k lines of backend code, 84k lines of unit, integration, and functional tests.
+- Led a team of 6 to write over 90k lines of backend code, 84k lines of unit, integration, and functional tests.
 - Fully featured registration platform, including a logic builder, payments, refunds, fully customizable reporting, transactional emails, a public API, web hooks, ...
 - Rules can be performed against all pieces of data collected by the system (user agent, country of origin, total owed, number of guests, as well as any responses entered by the attendee)
 - Forms are completely dynamic (all pages and items on pages are user configurable). Logic can often create very complex cascades of actions. A task executor processes all of them before committing the results to a database, to ensure that no rules were violated
