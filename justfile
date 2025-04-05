@@ -15,6 +15,9 @@ html: setup
 pdf: setup
 	earthly +pdf
 
+lint: setup
+    earthly +lint
+
 serve:
 	python -m http.server --directory dist/
 
