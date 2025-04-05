@@ -56,11 +56,11 @@ Led the transformation of a customer communication automation platform, managing
 Led the development of the industry's most powerful event registration SaaS platform, managing a team of 6 engineers to create a flexible, scalable solution that processed $16M in transactions across 69 events and 27k attendees in 2019 alone.
 
 - Architected and led the development of a comprehensive registration platform, overseeing the creation of 90k+ lines of backend code and 84k+ lines of tests. The platform featured advanced capabilities including:
-  - Dynamic form builder with user-configurable pages and items
-  - Complex business logic engine with cascading action processing
-  - Multi-provider payment integration (PayPal, Payflow Pro, Authorize.Net, Stripe)
-  - Enterprise-grade reporting engine with database-optimized expressions
-  - Extensive integration options (API, webhooks, SAML, spreadsheet upload)
+   - Dynamic form builder with user-configurable pages and items
+   - Complex business logic engine with cascading action processing
+   - Multi-provider payment integration (PayPal, Payflow Pro, Authorize.Net, Stripe)
+   - Enterprise-grade reporting engine with database-optimized expressions
+   - Extensive integration options (API, webhooks, SAML, spreadsheet upload)
 
 - Established and maintained high code quality standards through comprehensive testing strategies and continuous integration practices
 - Led the strategic decision to implement a hybrid technology stack, leveraging Golang for performance-critical components while maintaining Python for rapid development
@@ -109,7 +109,7 @@ Led the development of healthcare solutions while establishing technical excelle
 ### **Tech Lead, Orchid Events** (2007-2011; Salt Lake City, UT) [4y, 6m]
 
 Led the transformation of a full-service online event registration provider, establishing modern infrastructure and development practices.
-i
+
 - Architected and led the migration of infrastructure from on-premises to a professional data center, improving system reliability and scalability
 - Designed and implemented a new registration site framework, reducing deployment time from two weeks to two hours while improving reliability and quality
 - Led the development of a self-service customer portal, enabling clients to manage registration processes independently
@@ -127,7 +127,9 @@ Led innovative technical solutions for a metals broker and cut shop serving gove
 - Managed relationships with government and aerospace clients to ensure compliance and quality standards
 
 #### Side Project: MyHorsePlayer
+
 Developed a data-driven horseracing handicapping SaaS for the CEO that achieved:
+
 - Twice the win rate of favorite-based betting
 - Integration of professional handicapper insights with data mining and simulation techniques
 - Managed relationships with professional handicappers to validate and improve the system's algorithms
