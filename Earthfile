@@ -12,7 +12,7 @@ pandoc:
     pandoc
 
 images:
-  FROM dpokidov/imagemagick:7.1.1-45  # sync with .tool-versions
+  FROM dpokidov/imagemagick:7.1.1-41  # sync with .tool-versions
 
   COPY images/ images/
 
